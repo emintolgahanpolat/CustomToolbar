@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:background="@color/colorPrimary"
+              android:orientation="horizontal"
+              android:layout_height="?android:actionBarSize">
+
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/linerLayoutLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_weight="1"
+            android:id="@+id/titleTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    <HorizontalScrollView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/linerLayoutRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+
+
+
