@@ -12,18 +12,18 @@
             android:id="@+id/abContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:toolbarBackground="@color/white"
-            app:titleColor="#5FFF03"
             app:title="Favoriler">
 
     </com.emintolgahanpolat.toolbarexample.ActionBar>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+   <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+       <TextView
+               android:id="@+id/tvButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hello World!"
+               android:layout_gravity="center"/>
+
+   </FrameLayout>
 
 </LinearLayout>

@@ -15,12 +15,25 @@ class MainActivity : AppCompatActivity(){
 
 
         abContainer.createRightButton(R.drawable.ic_android_black_24dp)
-        abContainer.createRightButton(R.drawable.ic_android_black_24dp)
-        abContainer.createRightButton(R.drawable.ic_android_black_24dp)
-        abContainer.createRightButton(R.drawable.ic_android_black_24dp)
+
+
+
+        tvButton.setOnClickListener {
+            showHide()
+        }
     }
 
+    var a=false
+    private fun showHide() {
+        if (a){
+            abContainer.showHideSearchBar(true)
+            a=false
+        }else{
+            abContainer.showHideSearchBar(false)
+            a=true
+        }
 
+    }
 
 
 }
