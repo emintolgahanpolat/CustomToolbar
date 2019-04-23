@@ -5,6 +5,8 @@
         <attr name="toolbarBackground" format="color"/>
         <attr name="titleColor" format="color"/>
         <attr name="titleSize" format="integer"/>
+        <attr name="titleIcon" format="reference"></attr>
+        <attr name="separator" format="color"/>
     </declare-styleable>
 
 

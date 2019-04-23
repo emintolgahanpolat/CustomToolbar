@@ -8,22 +8,30 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <com.emintolgahanpolat.toolbarexample.ActionBar
+    <com.emintolgahanpolat.toolbarexample.CustomToolbar
             android:id="@+id/abContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="Favoriler">
 
-    </com.emintolgahanpolat.toolbarexample.ActionBar>
-   <FrameLayout android:layout_width="match_parent"
-                android:layout_height="match_parent">
-       <TextView
-               android:id="@+id/tvButton"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Hello World!"
-               android:layout_gravity="center"/>
+    </com.emintolgahanpolat.toolbarexample.CustomToolbar>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:orientation="vertical">
+        <TextView
+                android:id="@+id/tvButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"/>
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:id="@+id/seekBar"/>
 
-   </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>
