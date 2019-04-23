@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,30 +8,24 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+
+
     <com.emintolgahanpolat.toolbarexample.CustomToolbar
             android:id="@+id/abContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="Favoriler">
+            app:titleIcon="@drawable/ic_app"
+            android:layout_alignParentTop="true"
+            app:title="@string/app_name">
 
     </com.emintolgahanpolat.toolbarexample.CustomToolbar>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:gravity="center"
-                  android:orientation="vertical">
-        <TextView
-                android:id="@+id/tvButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:layout_gravity="center"/>
-        <SeekBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="100"
-                android:progress="0"
-                android:id="@+id/seekBar"/>
 
-    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_row"
+            android:layout_below="@+id/abContainer">
 
-</LinearLayout>
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
